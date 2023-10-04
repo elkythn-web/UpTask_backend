@@ -77,10 +77,10 @@ io.on('connection', (socket) => {
         socket.to(proyecto).emit("tarea actualizada", tarea);
     });
 
-    socket.on("cambiar estado", (tarea) => {
-        const proyecto = tarea.proyecto._id;
-        socket.to(proyecto).emit("nuevo estado", tarea);
-    });
+    // socket.on("cambiar estado", (tarea) => {
+    //     const proyecto = tarea.proyecto._id;
+    //     socket.to(proyecto).emit("nuevo estado", tarea);
+    // });
     
 })
 
